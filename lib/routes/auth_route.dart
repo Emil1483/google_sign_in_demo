@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../auth.dart';
+
 class AuthRoute extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -9,7 +11,7 @@ class AuthRoute extends StatelessWidget {
       ),
       body: Center(
         child: MaterialButton(
-          onPressed: () {},
+          onPressed: () => authService.googleSignIn(),
           color: Colors.white,
           child: Container(
             width: 188.0,
